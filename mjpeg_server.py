@@ -22,7 +22,7 @@ class MJPEGHandler(BaseHTTPRequestHandler):
                 print(f"Error: {e}")
                 break
 
-def run(server_class=HTTPServer, handler_class=MJPEGHandler, port=8080):
+def run(server_class=HTTPServer, handler_class=MJPEGHandler, port=8081):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
     print(f"Starting MJPEG server on port {port}...")
